@@ -1,27 +1,24 @@
-# AppVeiculos
+# Aplicação de Gerenciamento de Veículos
+Este projeto é uma aplicação web desenvolvida em Angular para gerenciar veículos, utilizando uma API RESTful de Veículos como backend.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
+## Configuração do Ambiente
+  Para executar localmente a aplicação, siga estas etapas:
 
-## Development server
+## Clonar o Repositório:
+ git clone https://github.com/JoseJulioDev/app-veiculos.git
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Instalar Dependências:
+ npm install
 
-## Code scaffolding
+## Executar a Aplicação:
+ ng serve
+ 
+### Acesse 
+ http://localhost:4200 no navegador para visualizar a aplicação.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Funcionalidades Principais
+ Listagem de Veículos: Visualize todos os veículos cadastrados.
+ Detalhes do Veículo: Visualize informações detalhadas de um veículo específico.
+ Adicionar Veículo: Cadastre novos veículos.
+ Editar Veículo: Atualize informações de veículos existentes.
+ Excluir Veículo: Remova veículos do sistema.
