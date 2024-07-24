@@ -1,0 +1,52 @@
+
+.links-container {
+    display: flex; /* Alinha os itens em linha */
+    gap: 10px; /* Espaçamento entre os links */
+    margin-bottom: 20px; /* Espaçamento abaixo do container */
+}
+
+.button {
+    background-color: #3128a7; /* roxo */
+    border-color: #3128a7; /* Cor da borda também roxo */
+    color: #fff; /* Texto branco para contraste */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+}
+
+
+.button-cadastra {
+    background-color: #28a745; /* Verde */
+    border-color: #28a745; /* Cor da borda também verde */
+    color: #fff; /* Texto branco para contraste */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd; 
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+  
+
+
+  

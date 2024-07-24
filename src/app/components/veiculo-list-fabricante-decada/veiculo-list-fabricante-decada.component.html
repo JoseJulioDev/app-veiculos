@@ -1,0 +1,8 @@
+<div *ngIf="listaVeiculos">
+  <h2>{{ tituloLista }}</h2>
+  <ul>
+    <li *ngFor="let item of listaVeiculos">
+      {{ item.descricao }} -> {{ item.quantidade }} veículos
+    </li>
+  </ul>
+</div>

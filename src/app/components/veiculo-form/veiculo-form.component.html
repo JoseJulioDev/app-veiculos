@@ -1,0 +1,24 @@
+<h2>{{ id ? 'Editar Veículo' : 'Adicionar Veículo' }}</h2>
+<form [formGroup]="veiculoForm" (ngSubmit)="onSubmit()" class="veiculo-form">
+  <label>
+    Modelo:
+    <input formControlName="modelo" type="text" placeholder="Modelo do Veículo" required>
+  </label>
+  <label>
+    Marca:
+    <input formControlName="marca" type="text" placeholder="Marca do Veículo" required>
+  </label>
+  <label>
+    Ano:
+    <input formControlName="ano" type="number" placeholder="Ano de Fabricação" required>
+  </label>
+  <label>
+    Descrição:
+    <textarea formControlName="descricao" placeholder="Descrição do Veículo"></textarea>
+  </label>
+  <label>
+    Vendido:
+    <input type="checkbox" formControlName="vendido">
+  </label>
+  <button type="submit">{{ id ? 'Atualizar' : 'Adicionar' }}</button>
+</form>

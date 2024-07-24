@@ -1,0 +1,34 @@
+<h2>Lista de Veículos</h2>
+<div class="links-container">
+  <a class="button" routerLink="/listar-veiculos-nao-vendidos">Veículos Não Vendidos</a>
+  <a class="button" routerLink="/listar-veiculos-por-decada">Veículos por Década</a>
+  <a class="button" routerLink="/listar-veiculos-por-fabricante">Veículos por Fabricante</a>
+  <a class="button" routerLink="/listar-veiculos-ultima-semana">Veículos Registrados Última Semana</a>
+</div>
+<table>
+  <thead>
+    <tr>
+      <th>Marca</th>
+      <th>Modelo</th>
+      <th>Ano</th>
+      <th>Descrição</th>
+      <th>Vendido</th>
+      <th>Opções</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let veiculo of veiculos">
+      <td>{{ veiculo.marca }}</td>
+      <td>{{ veiculo.modelo }}</td>
+      <td>{{ veiculo.ano }}</td>
+      <td>{{ veiculo.descricao }}</td>
+      <td>{{ veiculo.vendido ? 'Sim' : 'Não' }}</td>
+      <td>
+        <button (click)="editarVeiculo(veiculo.id)">Editar</button>
+        <button (click)="excluirVeiculo(veiculo.id)">Excluir</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<a class="button-cadastra" routerLink="/add">Adicionar Veículo</a>

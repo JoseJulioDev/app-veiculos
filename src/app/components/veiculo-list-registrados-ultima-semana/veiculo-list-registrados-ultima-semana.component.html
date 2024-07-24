@@ -1,0 +1,21 @@
+<h2>Lista de Veículos Registrados na Última Semana</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Marca</th>
+      <th>Modelo</th>
+      <th>Ano</th>
+      <th>Descrição</th>
+      <th>Vendido</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let veiculo of veiculos">
+      <td>{{ veiculo.marca }}</td>
+      <td>{{ veiculo.modelo }}</td>
+      <td>{{ veiculo.ano }}</td>
+      <td>{{ veiculo.descricao }}</td>
+      <td>{{ veiculo.vendido ? 'Sim' : 'Não' }}</td>
+    </tr>
+  </tbody>
+</table>
